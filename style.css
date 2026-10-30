@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: #12345a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #a9d2ff;
+}
+
+/* Secção principal */
+.principal {
+    background: #e5edf7;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.principal h1 {
+    color: #12345a;
+    font-size: 36px;
+}
+
+.botao {
+    display: inline-block;
+    background: #12345a;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background: #24558a;
+}
+
+/* Secção sobre */
+.sobre {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background: #12345a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Adaptação a telemóveis */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .principal h1 {
+        font-size: 28px;
+    }
+}
